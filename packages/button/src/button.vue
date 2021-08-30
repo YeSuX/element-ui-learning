@@ -2,7 +2,19 @@
   <button
     class="sx-button"
     :type="nativeType"
-    :class="[type ? 'sx-button--' + type : '']"
+    :disabled="buttonDisabled"
+    :class="[
+      type ? 'sx-button--' + type : '',
+      size ? 'sx-button--' + size : '',
+      {
+        'is-outline': outline,
+        'is-round': round,
+        'is-disabled': buttonDisabled,
+        'is-loading': loading,
+        'is-circle': circle,
+        'is-glass':glass,
+      },
+    ]"
   >
     <span v-if="$slots.default"><slot></slot></span>
   </button>
@@ -20,9 +32,21 @@ export default {
       type: String,
       default: "button",
     },
+    outline: Boolean,
+    round: Boolean,
+    disabled: Boolean,
+    size: String,
+    loading: Boolean,
+    circle:Boolean,
+    glass:Boolean,
+  },
+  computed: {
+    buttonDisabled() {
+      return this.disabled;
+    },
   },
   created() {
-    console.log("type",this.type);
+    // console.log("loading", this.loading);
   },
 };
 </script>

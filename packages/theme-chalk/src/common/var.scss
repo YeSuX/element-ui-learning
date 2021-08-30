@@ -15,12 +15,36 @@ $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 
 /* Color
 -------------------------- */
-/// color|1|Brand Color|0
-$--color-primary: #409EFF !default;
+/// color|1|Background Color|4
+$--color-current: currentColor !default;
+/// color|1|Background Color|4
+$--color-transparent: transparent !default;
 /// color|1|Background Color|4
 $--color-white: #FFFFFF !default;
 /// color|1|Background Color|4
 $--color-black: #000000 !default;
+/// color|1|Brand Color|0
+$--color-primary: #570df8 !default;
+$--color-primary-focus: #4506cb !default;
+$--color-primary-content: #FFFFFF !default;
+/// color|1|Brand Color|0
+$--color-secondary: #f000b8 !default;
+$--color-secondary-focus: #bd0091 !default;
+$--color-secondary-content: #FFFFFF !default;
+/// color|1|Brand Color|0
+$--color-accent: #37cdbe !default;
+$--color-accent-focus: #2aa79b !default;
+$--color-accent-content: #FFFFFF !default;
+/// color|1|Brand Color|0
+$--color-neutral: #3d4451 !default;
+$--color-neutral-focus: #2a2e37 !default;
+$--color-neutral-content: #FFFFFF !default;
+/// color|1|Brand Color|0
+$--color-base-100: #FFFFFF !default;
+$--color-base-200: #f9fafb !default;
+$--color-base-300: #d1d5db !default;
+$--color-base-content: #1f2937 !default;
+
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
@@ -30,14 +54,15 @@ $--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default; /
 $--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* c6e2ff */
 $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
+
 /// color|1|Functional Color|1
-$--color-success: #67C23A !default;
+$--color-success: #009485 !default;
 /// color|1|Functional Color|1
-$--color-warning: #E6A23C !default;
+$--color-warning: #ff9900 !default;
 /// color|1|Functional Color|1
-$--color-danger: #F56C6C !default;
+$--color-danger: #ff5724 !default;
 /// color|1|Functional Color|1
-$--color-info: #909399 !default;
+$--color-info: #2094f3 !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
@@ -515,9 +540,9 @@ $--button-font-weight: $--font-weight-primary !default;
 /// borderRadius||Border|2
 $--button-border-radius: $--border-radius-base !default;
 /// padding||Spacing|3
-$--button-padding-vertical: 12px !default;
+$--button-padding-vertical: 16px !default;
 /// padding||Spacing|3
-$--button-padding-horizontal: 20px !default;
+$--button-padding-horizontal: 48px !default;
 
 /// fontSize||Font|1
 $--button-medium-font-size: $--font-size-base !default;
