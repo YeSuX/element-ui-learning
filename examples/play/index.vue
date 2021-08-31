@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <h1>按钮篇</h1>
+    <h2>基础按钮</h2>
     <div class="row">
       <sx-button>默认按钮</sx-button>
       <sx-button type="primary">主要按钮</sx-button>
@@ -26,6 +28,7 @@
       <sx-button circle type="secondary">圆</sx-button>
       <sx-button circle type="accent">形</sx-button>
     </div>
+    <h2>禁用状态</h2>
     <div class="row">
       <sx-button disabled>默认按钮</sx-button>
       <sx-button disabled type="primary">主要按钮</sx-button>
@@ -37,12 +40,14 @@
       <sx-button disabled outline type="secondary">次要按钮</sx-button>
       <sx-button disabled outline type="accent">重点按钮</sx-button>
     </div>
+    <h2>状态按钮</h2>
     <div class="row">
       <sx-button type="info">提示</sx-button>
       <sx-button type="success">成功</sx-button>
       <sx-button type="warning">警告</sx-button>
       <sx-button type="danger">危险</sx-button>
     </div>
+    <h2>不同尺寸</h2>
     <div class="row">
       <sx-button>默认按钮</sx-button>
       <sx-button size="medium">中等按钮</sx-button>
@@ -54,9 +59,6 @@
       <sx-button size="medium" round>中等按钮</sx-button>
       <sx-button size="small" round>小型按钮</sx-button>
       <sx-button size="mini" round>超小按钮</sx-button>
-    </div>
-    <div class="row red">
-      <sx-button glass>默认按钮</sx-button>
     </div>
     
   </div>
