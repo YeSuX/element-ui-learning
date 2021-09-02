@@ -1,15 +1,12 @@
 <template>
-  <div class="wrapper">
-    <sx-row></sx-row>
-  </div>
+  <div>row</div>
 </template>
 
 <script>
 export default {
-
-}
+  name: "SxRow",
+};
 </script>
 
 <style>
-
 </style>

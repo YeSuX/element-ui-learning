@@ -1,7 +1,9 @@
 import Button from '../packages/button/index.js'; 
+import Row from '../packages/row/index'
 
 const components = [
-  Button
+  Button,
+  Row,
 ]
 
 const install = function(Vue, opts = {}) {
@@ -17,5 +19,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Button
+  Button,
+  Row,
 }
